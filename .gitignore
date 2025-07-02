@@ -1,0 +1,36 @@
+# === GLOBAL ===
+node_modules/
+dist/
+build/
+.env
+.env.*
+*.log
+*.tsbuildinfo
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# === FRONTEND: admin (React, Vite, or CRA) ===
+admin/node_modules/
+admin/dist/
+admin/build/
+admin/.env*
+admin/.cache/
+admin/.next/         # If using Next.js
+admin/.turbo/        # If using Turbopack
+admin/.vite/         # If using Vite
+admin/coverage/
+
+# === BACKEND: api (Hono, Drizzle, SQLite) ===
+api/node_modules/
+api/dist/
+api/.env*
+api/*.sqlite
+api/*.sqlite-journal
+api/*.db
+api/*.db-journal
+api/drizzle/migrations/*.ts
+
+# Optional: compiled schema or temporary generated types
+api/schema.generated.ts

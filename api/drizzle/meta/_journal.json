@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1751450123932,
+      "tag": "0000_simple_misty_knight",
+      "breakpoints": true
+    }
+  ]
+}
