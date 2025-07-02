@@ -1,36 +1,34 @@
-# === GLOBAL ===
-node_modules/
-dist/
-build/
-.env
-.env.*
-*.log
-*.tsbuildinfo
-.vscode/
-.idea/
+# Root-level ignore
 .DS_Store
-Thumbs.db
+.env
+*.env
+dist
+build
+*.log
 
-# === FRONTEND: admin (React, Vite, or CRA) ===
+# Ignore node_modules for both admin and api
 admin/node_modules/
 admin/dist/
-admin/build/
-admin/.env*
-admin/.cache/
-admin/.next/         # If using Next.js
-admin/.turbo/        # If using Turbopack
-admin/.vite/         # If using Vite
-admin/coverage/
+admin/.env
 
-# === BACKEND: api (Hono, Drizzle, SQLite) ===
 api/node_modules/
 api/dist/
-api/.env*
-api/*.sqlite
-api/*.sqlite-journal
-api/*.db
-api/*.db-journal
-api/drizzle/migrations/*.ts
+api/.env
 
-# Optional: compiled schema or temporary generated types
-api/schema.generated.ts
+# Optional: OS & IDE specific
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tsbuildinfo
+
+# VSCode
+.vscode/
+.idea/
+
+# Mac
+__MACOSX
+
+# Windows
+Thumbs.db
